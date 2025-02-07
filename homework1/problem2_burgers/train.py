@@ -41,7 +41,7 @@ def train():
         for batch in train_loader:
             inputs, targets = batch
             inputs = inputs.float()
-            print(inputs.shape)
+            #print(inputs.shape)
             optimizer.zero_grad()
             predicted = model(inputs)
 
@@ -59,8 +59,8 @@ def train():
         training_losses.append(epoch_loss)
 
         print(f"Epoch {epoch + 1}, Loss: {epoch_loss:.4f}")
-    #np.save(f'training-losses.npy', np.array(training_losses))
-    #torch.save(model, 'model.pth')
+    np.save(f'training-both_losses.npy', np.array(training_losses))
+    torch.save(model, 'model_both_losses.pth')
     # Validation Loop
     # TODO
     model.eval()
@@ -76,7 +76,7 @@ def train():
             num_val_batches += 1
 
     print(f"Validation Loss: {val_loss / num_val_batches:.4f}")
-    #np.save(f'training-rmses.npy', np.array(val_loss / num_val_batches))
+    np.save(f'training-rmses_both_losses.npy', np.array(val_loss / num_val_batches))
     '''
     plt.figure()
     plt.plot(range(1, epochs), training_losses, label='Data Loss')
