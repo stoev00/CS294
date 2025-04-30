@@ -1,0 +1,16 @@
+{"time":"2025-02-28T10:28:31.153796-08:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/wandb/run-20250228_102831-kw3x9q63/logs/debug-core.log"}
+{"time":"2025-02-28T10:28:31.163727-08:00","level":"INFO","msg":"created new stream","id":"kw3x9q63"}
+{"time":"2025-02-28T10:28:31.163806-08:00","level":"INFO","msg":"stream: started","id":"kw3x9q63"}
+{"time":"2025-02-28T10:28:31.163842-08:00","level":"INFO","msg":"handler: started","stream_id":"kw3x9q63"}
+{"time":"2025-02-28T10:28:31.163831-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"kw3x9q63"}
+{"time":"2025-02-28T10:28:31.163944-08:00","level":"INFO","msg":"sender: started","stream_id":"kw3x9q63"}
+{"time":"2025-02-28T10:28:31.374632-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-28T10:30:31.767287-08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/stoev-university-of-california-berkeley/dl-physics-hw2-schnet/kw3x9q63/file_stream\": read tcp 10.40.82.247:50168->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-02-28T10:42:11.991449-08:00","level":"INFO","msg":"stream: closing","id":"kw3x9q63"}
+{"time":"2025-02-28T10:42:11.991484-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-28T10:42:11.991759-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-28T10:42:12.410462-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-28T10:42:12.55934-08:00","level":"INFO","msg":"handler: closed","stream_id":"kw3x9q63"}
+{"time":"2025-02-28T10:42:12.559353-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kw3x9q63"}
+{"time":"2025-02-28T10:42:12.559376-08:00","level":"INFO","msg":"sender: closed","stream_id":"kw3x9q63"}
+{"time":"2025-02-28T10:42:12.559495-08:00","level":"INFO","msg":"stream: closed","id":"kw3x9q63"}

@@ -1,0 +1,15 @@
+{"time":"2025-02-27T16:34:48.720789-08:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/wandb/run-20250227_163448-io4zvmg8/logs/debug-core.log"}
+{"time":"2025-02-27T16:34:48.72907-08:00","level":"INFO","msg":"created new stream","id":"io4zvmg8"}
+{"time":"2025-02-27T16:34:48.72914-08:00","level":"INFO","msg":"stream: started","id":"io4zvmg8"}
+{"time":"2025-02-27T16:34:48.72919-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"io4zvmg8"}
+{"time":"2025-02-27T16:34:48.72921-08:00","level":"INFO","msg":"handler: started","stream_id":"io4zvmg8"}
+{"time":"2025-02-27T16:34:48.729315-08:00","level":"INFO","msg":"sender: started","stream_id":"io4zvmg8"}
+{"time":"2025-02-27T16:34:49.094945-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-27T16:34:49.289508-08:00","level":"INFO","msg":"stream: closing","id":"io4zvmg8"}
+{"time":"2025-02-27T16:34:49.289549-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-27T16:34:49.289589-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-27T16:34:49.748574-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-27T16:34:49.892648-08:00","level":"INFO","msg":"handler: closed","stream_id":"io4zvmg8"}
+{"time":"2025-02-27T16:34:49.892681-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"io4zvmg8"}
+{"time":"2025-02-27T16:34:49.892717-08:00","level":"INFO","msg":"sender: closed","stream_id":"io4zvmg8"}
+{"time":"2025-02-27T16:34:49.893018-08:00","level":"INFO","msg":"stream: closed","id":"io4zvmg8"}

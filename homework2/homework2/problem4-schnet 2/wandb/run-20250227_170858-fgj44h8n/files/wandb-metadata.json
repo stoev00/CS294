@@ -1,0 +1,31 @@
+{
+  "os":  "macOS-13.4.1-x86_64-i386-64bit",
+  "python":  "CPython 3.10.0",
+  "startedAt":  "2025-02-28T01:08:58.880555Z",
+  "program":  "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/train.py",
+  "codePath":  "train.py",
+  "email":  "stoev@berkeley.edu",
+  "root":  "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2",
+  "host":  "wifi-10-40-82-247.wifi.berkeley.edu",
+  "executable":  "/Users/alankstoev/Documents/VS Code/python310env/bin/python3",
+  "codePathLocal":  "train.py",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "379000430592",
+      "used":  "308136148992"
+    },
+    "/System/Volumes/Data":  {
+      "total":  "379000430592",
+      "used":  "308136148992"
+    }
+  },
+  "memory":  {
+    "total":  "17179869184"
+  },
+  "cpu":  {
+    "count":  6,
+    "countLogical":  12
+  }
+}

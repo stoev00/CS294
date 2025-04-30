@@ -1,0 +1,91 @@
+Train Epoch 1
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:27<00:00,  3.47s/it]
+True
+True
+True
+True
+True
+True
+True
+True
+Val Epoch 1
+True
+Train Epoch 2
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:29<00:00,  3.66s/it]
+True
+True
+True
+True
+True
+True
+True
+True
+Val Epoch 2
+True
+Train Epoch 3
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:26<00:00,  3.31s/it]
+True
+True
+True
+True
+True
+True
+True
+True
+Val Epoch 3
+True
+Train Epoch 4
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:26<00:00,  3.30s/it]
+True
+True
+True
+True
+True
+True
+True
+True
+Val Epoch 4
+True
+Train Epoch 5
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:26<00:00,  3.37s/it]
+True
+True
+True
+True
+True
+True
+True
+True
+Val Epoch 5
+True
+Train Epoch 6
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:27<00:00,  3.40s/it]
+True
+True
+True
+True
+True
+True
+True
+True
+Val Epoch 6
+True
+Train Epoch 7
+ 75%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                          | 6/8 [00:25<00:08,  4.26s/it]
+True
+True
+True
+True
+True
+True
+True
+Traceback (most recent call last):
+  File "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/train_rot.py", line 115, in <module>
+    train(args.data_dir, args.size, args.r_max, args.batch_size, args.lr, args.max_epochs, device)
+  File "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/train_rot.py", line 68, in train
+    loss.backward()
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

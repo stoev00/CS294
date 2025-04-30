@@ -1,0 +1,17 @@
+Train Epoch 1
+  0%|                                                                                                                                                                             | 0/8 [00:00<?, ?it/s]
+DataBatch(pos=[2688, 3], cell=[128, 3, 3], atomic_numbers=[2688], natoms=[128], y=[128], force=[2688, 3], fixed=[2688], sid=[128], fid=[128], id=[128], batch=[2688], ptr=[129])
+Traceback (most recent call last):
+  File "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/train.py", line 105, in <module>
+    train(args.data_dir, args.size, args.r_max, args.batch_size, args.lr, args.max_epochs, device)
+  File "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/train.py", line 63, in train
+    predictedE, predictedF = model(atomic_numbers, positions, indices)
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/schnet.py", line 111, in forward
+    h = self.embeddings(z) #TODO: compute initial node representations
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1695, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'SchNet' object has no attribute 'embeddings'

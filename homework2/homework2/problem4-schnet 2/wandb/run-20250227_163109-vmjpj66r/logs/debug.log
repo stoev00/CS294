@@ -1,0 +1,41 @@
+2025-02-27 16:31:09,401 INFO    MainThread:2646 [wandb_setup.py:_flush():67] Current SDK version is 0.19.7
+2025-02-27 16:31:09,401 INFO    MainThread:2646 [wandb_setup.py:_flush():67] Configure stats pid to 2646
+2025-02-27 16:31:09,401 INFO    MainThread:2646 [wandb_setup.py:_flush():67] Loading settings from /Users/alankstoev/.config/wandb/settings
+2025-02-27 16:31:09,401 INFO    MainThread:2646 [wandb_setup.py:_flush():67] Loading settings from /Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/wandb/settings
+2025-02-27 16:31:09,401 INFO    MainThread:2646 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-02-27 16:31:09,401 INFO    MainThread:2646 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/wandb/run-20250227_163109-vmjpj66r/logs/debug.log
+2025-02-27 16:31:09,401 INFO    MainThread:2646 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/wandb/run-20250227_163109-vmjpj66r/logs/debug-internal.log
+2025-02-27 16:31:09,401 INFO    MainThread:2646 [wandb_init.py:init():761] calling init triggers
+2025-02-27 16:31:09,402 INFO    MainThread:2646 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'epochs': 1000, 'batch_size': 128, 'r_max': 5.0, 'size': '1k', '_wandb': {}}
+2025-02-27 16:31:09,402 INFO    MainThread:2646 [wandb_init.py:init():784] starting backend
+2025-02-27 16:31:09,402 INFO    MainThread:2646 [wandb_init.py:init():788] sending inform_init request
+2025-02-27 16:31:09,484 INFO    MainThread:2646 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-02-27 16:31:09,485 INFO    MainThread:2646 [wandb_init.py:init():803] backend started and connected
+2025-02-27 16:31:09,490 INFO    MainThread:2646 [wandb_init.py:init():896] updated telemetry
+2025-02-27 16:31:09,491 INFO    MainThread:2646 [wandb_init.py:init():920] communicating run to backend with 90.0 second timeout
+2025-02-27 16:31:09,702 INFO    MainThread:2646 [wandb_init.py:init():995] starting run threads in backend
+2025-02-27 16:31:09,773 INFO    MainThread:2646 [wandb_run.py:_console_start():2377] atexit reg
+2025-02-27 16:31:09,773 INFO    MainThread:2646 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-02-27 16:31:09,773 INFO    MainThread:2646 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-02-27 16:31:09,774 INFO    MainThread:2646 [wandb_run.py:_redirect():2317] Redirects installed.
+2025-02-27 16:31:09,775 INFO    MainThread:2646 [wandb_init.py:init():1037] run started, returning control to user process
+2025-02-27 16:31:09,890 WARNING MsgRouterThr:2646 [router.py:message_loop():77] message_loop has been closed
+Traceback (most recent call last):
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/wandb/sdk/interface/router_sock.py", line 28, in _read_message
+    resp = self._sock_client.read_server_response(timeout=1)
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 285, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 270, in _read_packet_bytes
+    raise SockClientClosedError
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/wandb/sdk/interface/router.py", line 70, in message_loop
+    msg = self._read_message()
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/wandb/sdk/interface/router_sock.py", line 30, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-02-27 16:31:09,891 INFO    MsgRouterThr:2646 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.

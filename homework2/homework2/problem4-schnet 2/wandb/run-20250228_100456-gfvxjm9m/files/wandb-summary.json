@@ -1,0 +1,1 @@
+{"_step":1260,"test_force_loss":1.8179033994674683,"train_energy":13.805435180664062,"lr":3.200000000000001e-07,"val_force_loss":1.8179033994674683,"_runtime":789.159246,"val_energy":12.74816608428955,"_timestamp":1.740766685528518e+09,"_wandb":{"runtime":789},"train_force_loss":1.7691893577575684}

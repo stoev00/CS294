@@ -1,0 +1,1 @@
+{"_timestamp":1.740766150056899e+09,"_runtime":190.406563,"_step":119,"train_energy":29.501140594482422,"_wandb":{"runtime":193},"val_force_loss":1.8145631551742554,"lr":0.001,"train_force_loss":1.7891606092453003,"val_energy":11.178518295288086}

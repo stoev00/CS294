@@ -1,0 +1,56 @@
+Train Epoch 1
+  0%|                                                                                                                                                                             | 0/8 [00:00<?, ?it/s]
+DataBatch(pos=[2688, 3], cell=[128, 3, 3], atomic_numbers=[2688], natoms=[128], y=[128], force=[2688, 3], fixed=[2688], sid=[128], fid=[128], id=[128], batch=[2688], ptr=[129])
+tensor([[-1.2171e-02, -1.3504e-02,  1.5750e-02,  ...,  2.7725e-02,
+          4.9099e-02, -2.6952e-03],
+        [ 1.8416e-02, -2.8970e-02, -4.7330e-03,  ..., -1.0526e-02,
+          7.9528e-02,  3.2588e-02],
+        [ 3.7307e-02,  6.2063e-02, -3.7947e-02,  ..., -5.3487e-03,
+         -7.0554e-02, -1.0173e-01],
+        ...,
+        [-3.3835e-06, -2.6655e-04,  1.9430e-04,  ..., -5.5840e-04,
+         -2.4586e-04,  3.1796e-04],
+        [ 2.6322e-04, -8.8216e-05,  6.0618e-05,  ..., -6.1167e-04,
+         -4.7736e-05,  3.9907e-04],
+        [-2.3762e-02, -5.2275e-03, -4.7328e-03,  ...,  1.1675e-02,
+          1.3792e-02,  6.0070e-03]], grad_fn=<MulBackward0>)
+tensor([[ 1.8026, -0.6990, -1.2045,  ...,  0.7071, -1.3364, -0.9443],
+        [ 1.8026, -0.6990, -1.2045,  ...,  0.7071, -1.3364, -0.9443],
+        [ 1.8026, -0.6990, -1.2045,  ...,  0.7071, -1.3364, -0.9443],
+        ...,
+        [ 0.8121,  0.9783, -1.2692,  ...,  0.8784, -2.5004, -1.1653],
+        [ 0.8121,  0.9783, -1.2692,  ...,  0.8784, -2.5004, -1.1653],
+        [ 0.8121,  0.9783, -1.2692,  ...,  0.8784, -2.5004, -1.1653]],
+       grad_fn=<MmBackward0>)
+tensor([   0,    0,    0,  ..., 2687, 2687, 2687])
+tensor([[ 1,  0, -1,  ...,  0, -1,  0],
+        [ 1,  0, -1,  ...,  0, -1,  0],
+        [ 1,  0, -1,  ...,  0, -1,  0],
+        ...,
+        [ 0,  0, -1,  ...,  0, -2, -1],
+        [ 0,  0, -1,  ...,  0, -2, -1],
+        [ 0,  0, -1,  ...,  0, -2, -1]])
+Traceback (most recent call last):
+  File "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/train.py", line 105, in <module>
+    train(args.data_dir, args.size, args.r_max, args.batch_size, args.lr, args.max_epochs, device)
+  File "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/train.py", line 63, in train
+    predictedE, predictedF = model(atomic_numbers, positions, indices)
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/schnet.py", line 119, in forward
+    h = interaction.forward(h, edge_index, edge_weight, edge_attr)
+  File "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/schnet.py", line 159, in forward
+    h = self.conv(h, edge_index, edge_weight, edge_attr) #TODO: fill in this line
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/alankstoev/Documents/VS Code/CS294/homework2/homework2/problem4-schnet 2/schnet.py", line 188, in forward
+    agg = scatter(message, h[edge_index[1]].to(torch.int64), dim=0, reduce="sum")
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/torch_scatter/scatter.py", line 152, in scatter
+    return scatter_sum(src, index, dim, out, dim_size)
+  File "/Users/alankstoev/Documents/VS Code/python310env/lib/python3.10/site-packages/torch_scatter/scatter.py", line 21, in scatter_sum
+    return out.scatter_add_(dim, index, src)
+RuntimeError: index -1 is out of bounds for dimension 0 with size 3
